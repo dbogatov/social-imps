@@ -1,17 +1,52 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<title>{{title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>{{title }} | Social Imps</title>
+
+		<link rel="stylesheet" href="/components/bootstrap/dist/css/bootstrap.min.css" />
 		<link rel="stylesheet" href="/css/style.css">
-		{{#if ENV_DEVELOPMENT}}
-			<script src="http://localhost:35729/livereload.js"></script>
-		{{/if}}
 	</head>
 	<body>
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="/" class="navbar-brand">WebApplication</a>
+				</div>
+				<div class="navbar-collapse collapse">
+					<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="/">About</a></li>
+						<li><a href="/">Contact</a></li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="/">Register</a></a>
+						<li><a href="/">Log in</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="container body-content">
+			
+			{{{body}}}
+			
+			<hr />
+			<footer>
+				<p>&copy; 2016 - WebApplication</p>
+			</footer>
+		</div>
 
-		{{{body}}}
+		<script src="/components/jquery/dist/jquery.min.js"></script>
+		<script src="/components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+		{{{scripts}}}
 
 	</body>
 </html>
