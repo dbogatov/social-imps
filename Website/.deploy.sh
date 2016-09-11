@@ -19,4 +19,4 @@ npm install > /dev/null 2>> deploy.log
 bower install > /dev/null 2>> deploy.log
 gulp > /dev/null 2>> deploy.log
 
-curl --request POST 'https://push.dbogatov.org/api/push/deploy' --data "project=CV-Website"
+curl --request POST 'https://push.dbogatov.org/api/push/deploy' --data "project=Social-Imps"
