@@ -8,7 +8,7 @@ var config = {
 		app: {
 			name: 'website'
 		},
-		port: process.env.PORT || 3000,
+		port: process.env.PORT || 5003,
 		db: 'postgres://socialimp:SocialImps2016@dbogatov.org:5432/socialimps'
 	},
 
@@ -17,7 +17,7 @@ var config = {
 		app: {
 			name: 'website'
 		},
-		port: process.env.PORT || 3000,
+		port: process.env.PORT || 5003,
 		db: 'postgres://socialimp:SocialImps2016@dbogatov.org:5432/socialimps'
 	},
 
@@ -26,7 +26,7 @@ var config = {
 		app: {
 			name: 'website'
 		},
-		port: process.env.PORT || 3000,
+		port: process.env.PORT || 5003,
 		db: 'postgres://socialimp:SocialImps2016@dbogatov.org:5432/socialimps'
 	}
 };
