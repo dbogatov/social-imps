@@ -17,6 +17,6 @@ git reset --hard origin/master > /dev/null 2>> deploy.log
 
 npm install > /dev/null 2>> deploy.log
 bower install --allow-root > /dev/null 2>> deploy.log
-gulp > /dev/null 2>> deploy.log
+gulp deploy > /dev/null 2>> deploy.log
 
 curl --request POST 'https://push.dbogatov.org/api/push/deploy' --data "project=Social-Imps"
