@@ -29,3 +29,9 @@ router.get('/minutes', function (req, res, next) {
 		title: "Meeting Minutes"
 	});
 });
+
+router.get('/timeline', function (req, res, next) {
+	res.render('timeline', {
+		title: "BitCoin Timeline"
+	});
+});

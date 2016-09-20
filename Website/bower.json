@@ -8,6 +8,7 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7",
-    "cookieconsent": "cookieconsent2#^2.0.0"
+    "cookieconsent": "cookieconsent2#^2.0.0",
+    "underscore": "^1.8.3"
   }
 }
