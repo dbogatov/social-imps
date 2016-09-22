@@ -87,8 +87,7 @@ function drawChart() {
 					{
 						period: "DD",
 						count: 5,
-						label: "5 days",
-						selected: true
+						label: "5 days"
 					}, {
 						period: "DD",
 						count: 7,
@@ -96,7 +95,8 @@ function drawChart() {
 					}, {
 						period: "DD",
 						count: 14,
-						label: "2 weeks"
+						label: "2 weeks",
+						selected: true
 					}, {
 						period: "DD",
 						count: 21,
