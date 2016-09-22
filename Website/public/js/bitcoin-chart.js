@@ -1,5 +1,3 @@
-//var chartData = generateChartData();
-
 drawChart();
 
 function drawChart() {
@@ -121,26 +119,3 @@ function drawChart() {
 		});
 	});
 }
-
-// function generateChartData() {
-// 	var chartData = [];
-// 	var firstDate = new Date(2012, 0, 1);
-// 	firstDate.setDate(firstDate.getDate() - 1000);
-// 	firstDate.setHours(0, 0, 0, 0);
-
-// 	for (var i = 0; i < 1000; i++) {
-// 		var newDate = new Date(firstDate);
-// 		newDate.setHours(0, i, 0, 0);
-
-// 		var a = Math.round(Math.random() * (40 + i)) + 100 + i;
-// 		var b = Math.round(Math.random() * 100000000);
-
-// 		chartData.push({
-// 			"date": newDate,
-// 			"value": a,
-// 			"volume": b
-// 		});
-// 	}
-// 	return chartData;
-// }
-
