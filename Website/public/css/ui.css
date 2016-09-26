@@ -733,7 +733,6 @@ hr {
 	height: 0;
 	width: 0;
 	position: absolute;
-	pointer-events: none;
 }
 
 .ui-303 .timeline-content:after {
