@@ -1,0 +1,67 @@
+<div class="content" style="text-align: justify;">
+
+	<h2>Overview of the Bitcoin currency and Blockchain technology</h2>
+
+		<hr />		
+
+		<p>
+			The bitcoin currency relies on a network of nodes on which a public ledger of all transactions ever made are maintained. Each node running the bitcoin software maintains and updates the entire ledger. Any transactions made are propagated around to network to update the ledger of all nodes.
+		</p>
+
+		<h3>Wallets</h3>
+
+			<p>
+				Each bitcoin wallet is associated with a public key, which acts as your identifier/address in the bitcoin ledger as well as a private key. A wallet is really just a piece of software that interacts with the bitcoin network. A person can create as many wallets (set of public and private keys) as they wish, the number of possible wallets is so big that it does not make sense to check if there is already a wallet with the same key. If you lose your private key, all the bitcoins associated with that private key will be lost.
+			</p>
+
+		<h3>Transactions and the ledger</h3>
+
+			<p>
+				As mentioned, the bitcoin ledger is a record of all transactions ever made since the invention of bitcoin in 2008. The validity of each transaction in the ledger has been agreed upon by all the nodes in the network. Each transaction consists of a uniquely identified sender (the public key) and another uniquely identifiable receiver (once again, the public key). Since all transactions ever made are recorded, one can track the history and origin of all coins in circulation. That is, when a coin was mined, and how it has been subdivided and send between users. 
+			</p>
+
+			<p>
+				Making a transaction on the network means broadcasting that the number of coins associated with your public key goes down by X, while the number of coins associated with the receiver’s public key goes up. A signature generated using the transaction details (amount) and your own private key can then be verified by all other nodes using your public key. The signature (hash) can not be reused and is a perfect unique identifier for the transaction in the ledger. 
+			</p>
+
+			<p>
+				In reality, there is no distinct record of how much money is associated with a certain public key. This is instead computed by summing up all the money received at the key, minus all the money sent from that key. When sending money, you simply show that all previous transactions indicate that you have enough bitcoins.
+			</p>
+
+			<p>
+				$$ \text{Balance}_i = \sum_i \text{previous transactions sent to} - \sum_i \text{previous transactions sent from} $$ 
+			</p>
+
+		<h3>Bitcoin generation (mining)</h3>
+
+			<p>
+				The act of bitcoin mining, which is what most people are familiar with, is actually the way by which all of this data is protected from fraud. Simply put, all bitcoin miners are working together to ensure that no one can exploit the distributed fashion to their advantage and send more transactions than they have the means to.
+			</p>
+
+			<p>
+				An example would be Alice promising Ben that she will pay him 1BTC for a service. If she sends this transaction (Alice -> Ben) while also sending another transaction for 1BTC but to herself, the system might be confused as it takes a while for the transactions to propagate through the network. 
+			</p>
+
+			<p>
+				This is where the bitcoin mining comes in. Recent transactions (~10 minutes worth of transactions) are grouped into so called blocks and the act of mining involves computing a mathematically intensive hash for this block, uniquely labeling it. Whoever manages to compute a correct hash (hash with a special format) first gets to add this block to the public ledger, while also getting rewarded a number of bitcoins. Note, that this hash might include either the Alice->Ben transaction or the Alice->Alice transaction, depending on which one had reached this node in the network. However, it can’t include both, since they would violate each other. Once the correct hash has been mined for a block and it has been added to the block chain, all other nodes in the network update their version of the ledger, and start working on the next set of transaction forming a block. The hash includes information on both 10 minutes of transactions in the block, but also all previous transactions combined. Each block of transactions get buried under more recent block of transactions. Modifying the details of the transactions would mean being able to mine all the past blocks correctly by yourself.
+			</p>
+
+			<p>
+				The reward for successfully computing the hash is a number of bitcoins. In the beginning, computing the correct hash resulted in a lot of bitcoins but as more and more bitcoins have been mined, that reward has kept decreasing. This means that there will eventually be a final set of bitcoins rewarded, after which all have been “mined”. The reward is halved every 210,000 blocks, and currently sits at 12 coins.
+			</p>
+			
+			<p>
+				With many thousands of computers each trying to compute the correct hash for the most recent transactions, it obviously becomes very unlikely to own the computer that does so. That is why something called mining pools were created. They are systems by which one can join others and collectively pool resources to compute the hash. If any computer in the pool correctly computes the hash, the bitcoins are split up among all members of the pool, based on the proportion of resources they provide to the pool.
+			</p>
+
+
+
+	<h2>References</h2>
+
+		<ol>
+			<li>???</li>
+		</ol>
+
+	<small>Feedback? <a href="mailto:dmytro@dbogatov.org">dmytro@dbogatov.org</a></small>	
+
+</div>

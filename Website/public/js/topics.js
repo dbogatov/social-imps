@@ -40,8 +40,7 @@ if ($("#topics").length) {
 			title: "Ethics",
 			preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
 			tags: [
-				"Isamu",
-				"Dmytro"
+				"Isamu"
 			]
 		}, {
 			color: "red",
@@ -71,10 +70,9 @@ if ($("#topics").length) {
 		{
 			color: "red",
 			title: "Crime",
-			preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
+			preview: "Bitcoin appeals to criminals because of the ability to anonymously purchase goods and services online. The Silk Road, a Bitcoin market facilitating the sale of $1 billion in illegal drugs was a convenient place to publicly advertise illegal sales.",
 			tags: [
-				"Isamu",
-				"Dmytro"
+				"Isamu"
 			],
 			description: "Topic on Ethiccs"
 		},
@@ -103,6 +101,14 @@ if ($("#topics").length) {
 			tags: [
 				"Isamu",
 				"Dmytro"
+			]
+		},
+		{
+			color: "red",		
+			title: "How Bitcoin Works",
+			preview: "The bitcoin currency relies on a network of nodes on which a public ledger of all transactions ever made are maintained. Each node running the bitcoin software maintains and updates the entire ledger.",
+			tags: [
+				"Tim"
 			]
 		}]
 		.forEach(function (element, index, array) {
