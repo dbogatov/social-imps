@@ -36,6 +36,13 @@ if ($("#topics").length) {
 		");
 
 		[{
+			color: "purple",		
+			title: "How Bitcoin Works",
+			preview: "The bitcoin currency relies on a network of nodes on which a public ledger of all transactions ever made are maintained. Each node running the bitcoin software maintains and updates the entire ledger. Any transactions made are propagated ...",
+			tags: [
+				"Tim"
+			]
+		}, {
 			color: "green",
 			title: "Ethics",
 			preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
@@ -45,10 +52,9 @@ if ($("#topics").length) {
 		}, {
 			color: "red",
 			title: "Freedom of Speech",
-			preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
+			preview: "Journalist Alec Lui described BitCoin as, \"a compelling, if not polarizing mix of freedom of speech, cryptography, networked computing, finance, economics, and even politics. And one year after the bubble popped, the cryptocurrency is, against all odds, alive and well...\"",
 			tags: [
-				"Isamu",
-				"Dmytro"
+				"Isamu"
 			]
 		}, {
 			color: "brown",
@@ -101,14 +107,6 @@ if ($("#topics").length) {
 			tags: [
 				"Isamu",
 				"Dmytro"
-			]
-		},
-		{
-			color: "red",		
-			title: "How Bitcoin Works",
-			preview: "The bitcoin currency relies on a network of nodes on which a public ledger of all transactions ever made are maintained. Each node running the bitcoin software maintains and updates the entire ledger.",
-			tags: [
-				"Tim"
 			]
 		}]
 		.forEach(function (element, index, array) {
