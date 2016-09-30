@@ -4,3 +4,12 @@ $('a').each(function () {
 		$(this).attr("target", "_blank");
 	}
 });
+
+$('a').each(function () {
+	
+	var text = $(this).text().trim(); 
+
+	if (text === "#") {
+		$(this).text($(this).attr("href"));
+	}
+});
