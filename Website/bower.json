@@ -11,6 +11,7 @@
     "cookieconsent": "cookieconsent2#^2.0.0",
     "underscore": "^1.8.3",
     "amstock3": "^3.20.13",
-    "MathJax": "^2.6.1"
+    "MathJax": "^2.6.1",
+    "components-font-awesome": "^4.6.3"
   }
 }
