@@ -110,7 +110,7 @@ if ($("#topics").length) {
 		{
 			color: "purple",		
 			title: "Bitcoin in Popular Media",
-			preview: "A number of movies, books and songs portrait blockchain technology, or Bitcoin.",
+			preview: "A number of movies, books and songs portrait blockchain technology, or Bitcoin. There are a lot of technical and documentary books on Bitcoin. Here, we demonstrate some of the fictions, thrillers and detectives.",
 			tags: [
 				"Dmytro"
 			]
