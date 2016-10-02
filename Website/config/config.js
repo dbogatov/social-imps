@@ -1,34 +1,19 @@
 var path = require('path'),
-    rootPath = path.normalize(__dirname + '/..'),
-    env = process.env.NODE_ENV || 'development';
+	rootPath = path.normalize(__dirname + '/..'),
+	env = process.env.NODE_ENV || 'development';
+
+var options = {
+	root: rootPath,
+	app: {
+		name: 'website'
+	},
+	port: process.env.PORT || 5003
+};
 
 var config = {
-	development: {
-		root: rootPath,
-		app: {
-			name: 'website'
-		},
-		port: process.env.PORT || 5003,
-		db: 'postgres://socialimp:SocialImps2016@dbogatov.org:5432/socialimps'
-	},
-
-	test: {
-		root: rootPath,
-		app: {
-			name: 'website'
-		},
-		port: process.env.PORT || 5003,
-		db: 'postgres://socialimp:SocialImps2016@dbogatov.org:5432/socialimps'
-	},
-
-	production: {
-		root: rootPath,
-		app: {
-			name: 'website'
-		},
-		port: process.env.PORT || 5003,
-		db: 'postgres://socialimp:SocialImps2016@dbogatov.org:5432/socialimps'
-	}
+	development: options,
+	test: options,
+	production: options
 };
 
 module.exports = config[env];

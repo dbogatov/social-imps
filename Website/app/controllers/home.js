@@ -1,6 +1,5 @@
 var express = require("express"),
-	router = express.Router(),
-	db = require("../models");
+	router = express.Router();
 
 module.exports = function (app) {
 	app.use("/", router);
@@ -13,7 +12,7 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/cookie", function (req, res, next) {
-	res.render("cookie", { 
+	res.render("cookie", {
 		title: "Cookie Consent"
 	});
 });
@@ -37,9 +36,11 @@ router.get("/topics", function (req, res, next) {
 });
 
 router.get("/topics/:topic", function (req, res, next) {
-	var normalize = function(title) {
+	var normalize = function (title) {
 		title = title.replace(/-/g, " ");
-		return title.replace(/\w\S*/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
+		return title.replace(/\w\S*/g, function (txt) {
+			return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+		});
 	};
 
 	res.render("topics/" + req.params.topic, {

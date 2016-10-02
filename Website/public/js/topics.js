@@ -36,12 +36,19 @@ if ($("#topics").length) {
 		");
 
 		[{
-			color: "purple",		
+			color: "purple",
 			title: "How Bitcoin Works",
 			preview: "The bitcoin currency relies on a network of nodes on which a public ledger of all transactions ever made are maintained. Each node running the bitcoin software maintains and updates the entire ledger. Any transactions made are propagated ...",
 			tags: [
 				"Tim",
 				"Dmytro"
+			]
+		}, {
+			color: "blue",
+			title: "Conclusions",
+			preview: "Cryptocurrencies such as BitCoin still have numerous significant obstacles to overcome before they could totally replace current currency systems. The most immediate is the simple opposition from existing financial institutions, which wield ...",
+			tags: [
+				"Nick"
 			]
 		}, {
 			color: "green",
@@ -64,14 +71,15 @@ if ($("#topics").length) {
 			tags: [
 				"Tim"
 			]
-		}, {
-			color: "purple",
-			title: "Privacy",
-			preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
-			tags: [
-				"Nick"
-			]
 		},
+		// {
+		// 	color: "purple",
+		// 	title: "Privacy",
+		// 	preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
+		// 	tags: [
+		// 		"Nick"
+		// 	]
+		// },
 		{
 			color: "red",
 			title: "Crime",
@@ -80,35 +88,33 @@ if ($("#topics").length) {
 				"Isamu"
 			],
 			description: "Topic on Ethiccs"
-		},
-		{
-			color: "brown",	
+		}, {
+			color: "brown",
 			title: "Errors Failures Risks",
 			preview: "Here we look at a few risks that surround the usage of Bitcoin. Regulatory risk. A lack of properly laid out regulation surrounding Bitcoins and other cryptocurrencies means that their future is very uncertain in the context of our society.",
 			tags: [
 				"Tim"
 			]
 		},
+		// {
+		// 	color: "green",
+		// 	title: "Professional Ethics",
+		// 	preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
+		// 	tags: [
+		// 		"Isamu",
+		// 		"Dmytro"
+		// 	]
+		// }, {
+		// 	color: "blue",
+		// 	title: "Work",
+		// 	preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
+		// 	tags: [
+		// 		"Isamu",
+		// 		"Dmytro"
+		// 	]
+		// },
 		{
-			color: "green",		
-			title: "Professional Ethics",
-			preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
-			tags: [
-				"Isamu",
-				"Dmytro"
-			]
-		},
-		{
-			color: "blue",		
-			title: "Work",
-			preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
-			tags: [
-				"Isamu",
-				"Dmytro"
-			]
-		},
-		{
-			color: "purple",		
+			color: "purple",
 			title: "Bitcoin in Popular Media",
 			preview: "A number of movies, books and songs portrait blockchain technology, or Bitcoin. There are a lot of technical and documentary books on Bitcoin. Here, we demonstrate some of the fictions, thrillers and detectives.",
 			tags: [

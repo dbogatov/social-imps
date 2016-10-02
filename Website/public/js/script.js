@@ -6,8 +6,8 @@ $('a').each(function () {
 });
 
 $('a').each(function () {
-	
-	var text = $(this).text().trim(); 
+
+	var text = $(this).text().trim();
 
 	if (text === "#") {
 		$(this).text($(this).attr("href"));
