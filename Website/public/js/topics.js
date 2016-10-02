@@ -71,16 +71,14 @@ if ($("#topics").length) {
 			tags: [
 				"Tim"
 			]
-		},
-		// {
-		// 	color: "purple",
-		// 	title: "Privacy",
-		// 	preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
-		// 	tags: [
-		// 		"Nick"
-		// 	]
-		// },
-		{
+		}, {
+			color: "purple",
+			title: "Privacy",
+			preview: "Cryptocurrencies like Bitcoin have the intriguing property of being fully anonymous, while also being one of the least private methods for financial transactions ever conceived, due to the fact that all transactions are recorded in the ...",
+			tags: [
+				"Nick"
+			]
+		}, {
 			color: "red",
 			title: "Crime",
 			preview: "Bitcoin appeals to criminals because of the ability to anonymously purchase goods and services online. The Silk Road, a Bitcoin market facilitating the sale of $1 billion in illegal drugs was a convenient place to publicly advertise illegal sales.",
@@ -95,25 +93,7 @@ if ($("#topics").length) {
 			tags: [
 				"Tim"
 			]
-		},
-		// {
-		// 	color: "green",
-		// 	title: "Professional Ethics",
-		// 	preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
-		// 	tags: [
-		// 		"Isamu",
-		// 		"Dmytro"
-		// 	]
-		// }, {
-		// 	color: "blue",
-		// 	title: "Work",
-		// 	preview: "The innovative idea of an e-currency is has gained a lot of traction in recent times, and will likely play a major financial role in the future. Cryptocurrencies are bringing many new innovative solutions to the current financial situation.",
-		// 	tags: [
-		// 		"Isamu",
-		// 		"Dmytro"
-		// 	]
-		// },
-		{
+		}, {
 			color: "purple",
 			title: "Bitcoin in Popular Media",
 			preview: "A number of movies, books and songs portrait blockchain technology, or Bitcoin. There are a lot of technical and documentary books on Bitcoin. Here, we demonstrate some of the fictions, thrillers and detectives.",
