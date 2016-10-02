@@ -1,0 +1,1 @@
+Read a blog post about this website: [here](https://blog.dbogatov.org/college/2016/10/01/cs-3043-website).
