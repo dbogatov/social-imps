@@ -1,6 +1,26 @@
-production:
-  type: deploy
+stages:
+- build
+- release
+
+build:
+  image: dbogatov/docker-images:gulp-bower-latest
+  stage: build
   script:
-  - curl --request POST 'https://deploy.dbogatov.org/deploy' --data "token=$TOKEN" --data "project=SocialImps"
-  only:
-  - master
+  - ./build.sh
+  artifacts:
+    expire_in: 30 min
+    paths:
+    - "*"
+  tags:
+  - docker
+
+dockerify:
+  stage: release
+  dependencies:
+  - build
+  script:
+  - docker build -t registry.dbogatov.org/dbogatov/cs-3043-group-project .
+  - docker login -u gitlab-ci-token -p $CI_BUILD_TOKEN registry.dbogatov.org
+  - docker push registry.dbogatov.org/dbogatov/cs-3043-group-project
+  tags:
+  - shell
