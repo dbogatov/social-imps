@@ -11,10 +11,10 @@ build:
     expire_in: 30 min
     paths:
     - app/
-	- config/
-	- public/
-	- node_modules/
-	- app.js
+    - config/
+    - public/
+    - node_modules/
+    - app.js
   tags:
   - docker
 
