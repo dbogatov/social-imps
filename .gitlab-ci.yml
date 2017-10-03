@@ -10,7 +10,11 @@ build:
   artifacts:
     expire_in: 30 min
     paths:
-    - "*"
+    - app/
+	- config/
+	- public/
+	- node_modules/
+	- app.js
   tags:
   - docker
 
