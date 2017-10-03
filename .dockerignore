@@ -7,3 +7,5 @@ bower.json
 gulpfile.js
 package.json
 README.md
+build.sh
+.git/
