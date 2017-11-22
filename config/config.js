@@ -7,7 +7,7 @@ var options = {
 	app: {
 		name: 'website'
 	},
-	port: process.env.PORT || 5003
+	port: process.env.PORT || 80
 };
 
 var config = {
