@@ -9,6 +9,6 @@ WORKDIR /srv
 COPY . .
 
 # Expose the port and start the app
-EXPOSE 5003
+EXPOSE 80
 
 ENTRYPOINT node app.js
